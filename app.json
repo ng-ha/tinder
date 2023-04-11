@@ -2,6 +2,7 @@
   "expo": {
     "name": "tinder",
     "slug": "tinder",
+    "scheme": "abc",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,13 +16,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ngthanhha.tinder"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ngthanhha.tinder"
     },
     "web": {
       "favicon": "./assets/favicon.png"

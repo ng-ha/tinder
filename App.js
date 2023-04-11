@@ -1,19 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import StackNavigator from './src/navigation/StackNavigator';
+import { NavigationContainer } from '@react-navigation/native';
+import { AuthProvider } from './src/hooks/useAuth';
 
 export default function App() {
   return (
-    <View style={styles.container} className="bg-red-500">
-      <Text>hello world</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <AuthProvider>
+        <StackNavigator />
+      </AuthProvider>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
