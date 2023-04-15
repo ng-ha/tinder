@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "tinder",
-    "slug": "tinder",
-    "scheme": "abc",
+    "name": "tinder-3",
+    "slug": "tinder-3",
+    "scheme": "com.ngthanhha.tinder-3",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,22 +12,25 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.ngthanhha.tinder"
+      "bundleIdentifier": "com.ngthanhha.tinder-3"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.ngthanhha.tinder"
+      "package": "com.ngthanhha.tinder3"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ba3ad9c2-5b36-4343-9084-0d6eec1657e7"
+      }
     }
   }
 }

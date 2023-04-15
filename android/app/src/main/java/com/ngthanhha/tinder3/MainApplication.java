@@ -1,4 +1,4 @@
-package com.ngthanhha.tinder;
+package com.ngthanhha.tinder3;
 
 import android.app.Application;
 import android.content.res.Configuration;

@@ -113,9 +113,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace 'com.ngthanhha.tinder'
+    namespace 'com.ngthanhha.tinder3'
     defaultConfig {
-        applicationId 'com.ngthanhha.tinder'
+        applicationId 'com.ngthanhha.tinder3'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

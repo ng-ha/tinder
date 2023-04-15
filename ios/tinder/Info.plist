@@ -5,7 +5,7 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>$(DEVELOPMENT_LANGUAGE)</string>
     <key>CFBundleDisplayName</key>
-    <string>tinder</string>
+    <string>tinder-3</string>
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>
@@ -25,8 +25,8 @@
       <dict>
         <key>CFBundleURLSchemes</key>
         <array>
-          <string>abc</string>
-          <string>com.ngthanhha.tinder</string>
+          <string>com.ngthanhha.tinder-3</string>
+          <string>com.ngthanhha.tinder-3</string>
         </array>
       </dict>
     </array>
