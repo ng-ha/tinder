@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "jsx": "react",
-    "jsx": "react",
     "module": "commonjs",
     "target": "es6",
     "checkJs": true

@@ -9,6 +9,7 @@ import {
 import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { auth } from '../firebase';
 WebBrowser.maybeCompleteAuthSession();
+
 const AuthContext = createContext({});
 
 export const AuthProvider = ({ children }) => {
@@ -30,6 +31,7 @@ export const AuthProvider = ({ children }) => {
     });
     return unsub;
   }, []);
+
   useEffect(() => {
     if (response?.type === 'success') {
       const { accessToken, idToken } = response.authentication;
