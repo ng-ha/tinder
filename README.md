@@ -22,7 +22,7 @@
 <img width="49%" src="./github-images/8.png" alt="ng-ha" />
 </div>
 
-https://github.com/ng-ha/deliveroo/assets/115610452/608bd91b-d458-4172-82f8-a7ab9e9a5854
+https://github.com/ng-ha/tinder-clone/assets/115610452/8de9a40e-ffc7-44f4-ba4b-f48578b12673
 
 ### License :right_anger_bubble:
 
