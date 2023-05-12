@@ -1,10 +1,10 @@
-import { Image, Text, TouchableOpacity, View } from 'react-native';
-import React, { useEffect, useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
+import { collection, onSnapshot, orderBy, query } from 'firebase/firestore';
+import React, { useEffect, useState } from 'react';
+import { Image, Text, TouchableOpacity, View } from 'react-native';
+import { db } from '../firebase';
 import useAuth from '../hooks/useAuth';
 import getMatchedUserInfo from '../lib/getMatchedUserInfo';
-import { db } from '../firebase';
-import { collection, onSnapshot, orderBy, query, where } from 'firebase/firestore';
 
 const ChatRow = ({ matchDetails }) => {
   const navigation = useNavigation();

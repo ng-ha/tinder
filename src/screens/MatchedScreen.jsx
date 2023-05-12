@@ -1,6 +1,6 @@
-import { Image, Text, TouchableOpacity, View } from 'react-native';
-import React from 'react';
 import { useNavigation, useRoute } from '@react-navigation/native';
+import React from 'react';
+import { Image, Text, TouchableOpacity, View } from 'react-native';
 
 const MatchedScreen = () => {
   const navigation = useNavigation();

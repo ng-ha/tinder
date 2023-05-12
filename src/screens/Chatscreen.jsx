@@ -1,4 +1,4 @@
-import { SafeAreaView, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native';
 import React from 'react';
 import Header from '../components/Header';
 import ChatList from '../components/ChatList';

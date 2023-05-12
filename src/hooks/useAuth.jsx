@@ -1,3 +1,4 @@
+import { ANDROIDCLIENTID, IOSCLIENTID } from '@env';
 import * as Google from 'expo-auth-session/providers/google';
 import * as WebBrowser from 'expo-web-browser';
 import {
@@ -8,6 +9,7 @@ import {
 } from 'firebase/auth';
 import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { auth } from '../firebase';
+
 WebBrowser.maybeCompleteAuthSession();
 
 const AuthContext = createContext({});
@@ -18,8 +20,8 @@ export const AuthProvider = ({ children }) => {
   const [loadingInitial, setLoadingInitial] = useState(true);
   const [loading, setLoading] = useState(false);
   const [request, response, promptAsync] = Google.useAuthRequest({
-    iosClientId: '744409744447-cv0ednhrj48mn6a3655l87jejtqa4p5g.apps.googleusercontent.com',
-    androidClientId: '744409744447-ogal7d3j4mqfvq4t8sqlr6b34ruh1e91.apps.googleusercontent.com',
+    iosClientId: IOSCLIENTID,
+    androidClientId: ANDROIDCLIENTID,
     // scopes: ['profile', 'email'],
     // permissions: ['public_profile', 'email', 'gender', 'location'],
   });

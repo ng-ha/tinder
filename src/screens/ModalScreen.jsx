@@ -1,9 +1,9 @@
-import { Alert, Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import React, { useState } from 'react';
-import useAuth from '../hooks/useAuth';
-import { doc, serverTimestamp, setDoc } from 'firebase/firestore';
-import { db } from '../firebase';
 import { useNavigation } from '@react-navigation/native';
+import { doc, serverTimestamp, setDoc } from 'firebase/firestore';
+import React, { useState } from 'react';
+import { Alert, Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { db } from '../firebase';
+import useAuth from '../hooks/useAuth';
 
 const ModalScreen = () => {
   const { user } = useAuth();

@@ -1,22 +1,4 @@
-import {
-  Button,
-  FlatList,
-  Keyboard,
-  KeyboardAvoidingView,
-  Platform,
-  SafeAreaView,
-  Text,
-  TextInput,
-  TouchableWithoutFeedback,
-  View,
-} from 'react-native';
-import React, { useEffect, useState } from 'react';
-import Header from '../components/Header';
-import useAuth from '../hooks/useAuth';
-import getMatchedUserInfo from '../lib/getMatchedUserInfo';
 import { useRoute } from '@react-navigation/native';
-import SenderMessage from '../components/SenderMessage';
-import ReceiverMessage from '../components/ReceiverMessage';
 import {
   addDoc,
   collection,
@@ -25,7 +7,24 @@ import {
   query,
   serverTimestamp,
 } from 'firebase/firestore';
+import React, { useEffect, useState } from 'react';
+import {
+  Button,
+  FlatList,
+  Keyboard,
+  KeyboardAvoidingView,
+  Platform,
+  SafeAreaView,
+  TextInput,
+  TouchableWithoutFeedback,
+  View,
+} from 'react-native';
+import Header from '../components/Header';
+import ReceiverMessage from '../components/ReceiverMessage';
+import SenderMessage from '../components/SenderMessage';
 import { db } from '../firebase';
+import useAuth from '../hooks/useAuth';
+import getMatchedUserInfo from '../lib/getMatchedUserInfo';
 
 const MessageScreen = () => {
   const { user } = useAuth();

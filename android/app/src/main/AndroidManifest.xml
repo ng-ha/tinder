@@ -26,8 +26,6 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="abc"/>
-        <data android:scheme="com.ngthanhha.tinder"/>
         <data android:scheme="com.ngthanhha.tinder-3"/>
         <data android:scheme="com.ngthanhha.tinder3"/>
       </intent-filter>

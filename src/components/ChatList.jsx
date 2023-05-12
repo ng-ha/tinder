@@ -1,6 +1,6 @@
-import { FlatList, Text, View } from 'react-native';
-import React, { useEffect, useState } from 'react';
 import { collection, onSnapshot, query, where } from 'firebase/firestore';
+import React, { useEffect, useState } from 'react';
+import { FlatList, Text, View } from 'react-native';
 import { db } from '../firebase';
 import useAuth from '../hooks/useAuth';
 import ChatRow from './ChatRow';

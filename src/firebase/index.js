@@ -1,31 +1,30 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from 'firebase/app';
-// import { getAnalytics } from 'firebase/analytics';
-import { getAuth, getReactNativePersistence, initializeAuth } from 'firebase/auth/react-native';
-import { getFirestore } from 'firebase/firestore';
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 import AsyncStorage from '@react-native-async-storage/async-storage';
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+import { initializeApp } from 'firebase/app';
+import { getReactNativePersistence, initializeAuth } from 'firebase/auth/react-native';
+import { getFirestore } from 'firebase/firestore';
+import {
+  APIKEY,
+  AUTHDOMAIN,
+  PROJECTID,
+  STORAGEBUCKET,
+  MESSAGINGSENDERID,
+  APPID,
+  MEASUREMENTID,
+} from '@env';
 const firebaseConfig = {
-  apiKey: 'AIzaSyCn7c5u-oBVUizfHV3YUayQC-YG4LFnxUo',
-  authDomain: 'tinder-3-383704.firebaseapp.com',
-  projectId: 'tinder-3-383704',
-  storageBucket: 'tinder-3-383704.appspot.com',
-  messagingSenderId: '744409744447',
-  appId: '1:744409744447:web:ac98ccdb019a9a2250a48a',
-  measurementId: 'G-WR73TMH7CB',
+  apiKey: APIKEY,
+  authDomain: AUTHDOMAIN,
+  projectId: PROJECTID,
+  storageBucket: STORAGEBUCKET,
+  messagingSenderId: MESSAGINGSENDERID,
+  appId: APPID,
+  measurementId: MEASUREMENTID,
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
-//
 const auth = initializeAuth(app, {
   persistence: getReactNativePersistence(AsyncStorage),
 });
-
 const db = getFirestore(app);
 
 export { auth, db }; // Import the functions you need from the SDKs you need

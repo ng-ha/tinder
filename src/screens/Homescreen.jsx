@@ -1,9 +1,5 @@
-import { Button, Image, SafeAreaView, Text, TouchableOpacity, View } from 'react-native';
-import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { useNavigation } from '@react-navigation/native';
-import useAuth from '../hooks/useAuth';
 import { AntDesign, Entypo, Ionicons } from '@expo/vector-icons';
-import Swiper from 'react-native-deck-swiper';
+import { useNavigation } from '@react-navigation/native';
 import {
   collection,
   doc,
@@ -15,7 +11,11 @@ import {
   setDoc,
   where,
 } from 'firebase/firestore';
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { Image, SafeAreaView, Text, TouchableOpacity, View } from 'react-native';
+import Swiper from 'react-native-deck-swiper';
 import { db } from '../firebase';
+import useAuth from '../hooks/useAuth';
 import generateId from '../lib/generateId';
 
 const DUMMY_DATA = [
