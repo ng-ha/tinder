@@ -22,7 +22,8 @@
 <img width="49%" src="./github-images/8.png" alt="ng-ha" />
 </div>
 
-https://github.com/ng-ha/tinder-clone/assets/115610452/8de9a40e-ffc7-44f4-ba4b-f48578b12673
+https://github.com/ng-ha/tinder/assets/115610452/5a8e5de3-3eae-4a87-b531-366d03b665c6
+
 
 ### License :right_anger_bubble:
 
